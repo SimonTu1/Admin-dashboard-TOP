@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+:root {
+    
+ --grey:  #F0F3F4;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+  
+    font-family: 'Open Sans', sans-serif;
+ 
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    /* grid-auto-flow: row; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+height: 100%;
+ 
+}
+
+.header {
+  grid-column: 2/4;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  background: #fff;
+ 
+  box-shadow: 2px 2px  #D3D3D3;
+ z-index: 0;
+ 
+}
+
+.top-side {
+   display: grid;
+   grid-template-columns: 2/4;
+   grid-auto-flow: column;
+ 
+   margin-bottom: 2rem;
+
+}
+
+
+.top-right {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-auto-flow: column;
+  gap: 2rem;
+  padding-left: 2rem;
+
+}
+
+.bot-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.material-symbols-outlined {
+    padding-right: 1rem;
+  
+}
+
+h3 {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+input[type="text"] {
+    width: 40rem;
+    border-radius: 5px;
+  
+}
+
+.bot-right {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    justify-content: end;
+ margin-bottom: 3rem;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color:#00BFFF;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #40E0D0;
+}
+
+.sidebar {
+ grid-row: 1/4;
+ padding-top: 2rem;
+ padding-left: 4rem;
+ background: #00BFFF;
+ min-height: 100vh;
+
+
+
+}
+
+
+.list-item li {
+   list-style: none;
+   margin-top: 1.2rem;
+}
+
+.list-item-2 {
+    margin-top: 3rem;
+}
+
+.list-item-2 li {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.side-heading {
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+    
+}
+
+.project-main {
+    display: grid;
+    grid-template-columns:  2fr 1fr ; 
+    /* grid-template-rows: 1fr 1fr; */
+    background:var(--grey);
+    gap: 50px;
+    grid-auto-flow: column ;
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    /* overflow: hidden */
+
+  
+}
+
+.project-head {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+.projects-item {
+    display: grid;
+    gap: 44px;
+   grid-template-columns: 2fr 2fr;
+    padding-left: 2rem;
+}
+
+.project {
+    background: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    border-left: 10px solid #FF8C00;
+    box-shadow: 3px 5px #D0D3D4;
+  
+}
+
+
+.project-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    align-content: end;
+    justify-content: end;
+    padding-top: 1rem;
+}
+
+h4 {
+    padding-bottom: 2rem;
+}
+/* .announcements {
+
+   
+} */
+
+.annouce-part {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 20px; */
+    padding-right: 1rem;
+  
+}
+.announcements h4 {
+ 
+  margin-top: 1rem;
+  font-size: 1.2rem;
+
+}
+
+.anno-item {
+    background: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width:  25rem;
+
+
+    
+
+    
+}
+.anno-item p {
+    font-size: 16px;
+}
+
+h5 {
+    padding-bottom: 1rem;
+}
+
+.one {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow:  3px 5px #D0D3D4;
+}
+.two {
+     box-shadow: 3px 5px #D0D3D4;
+}
+
+.three {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    box-shadow: 3px 5px #D0D3D4;
+}
+.tread {
+    margin-top: 2rem;
+    padding-right: 1rem;
+    width: 20rem
+   
+}
+
+.tread-part {
+    background: #fff;
+    padding-left: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   padding-bottom: 1rem;
+   box-shadow: 3px 5px #D0D3D4;
+  
+}
+.tread-item {
+    padding-top: 1rem;
+    
+}
+.text {
+   padding-left: 2rem;
+}
